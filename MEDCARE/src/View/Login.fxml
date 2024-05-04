@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1710.0" prefWidth="1710.0" style="-fx-background-color: #C6FCFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+   <children>
+      <ImageView fitHeight="1710.0" fitWidth="895.0" layoutX="1.0" pickOnBounds="true" style="-fx-background: #87CEFA.;">
+         <image>
+            <Image url="@../../Resource/loginimg.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="1145.0" layoutY="243.0" prefHeight="614.0" prefWidth="528.0" style="-fx-background-radius: 30px; -fx-background-color: white;">
+         <children>
+            <Label layoutX="62.0" layoutY="146.0" text="Login">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="42.0" fitWidth="80.0" layoutX="67.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/Screenshot%202024-05-02%20at%209.12.56%E2%80%AFPM.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="67.0" layoutY="203.0" text="Login to Your Account" textFill="#d3d1d1" />
+            <Label layoutX="67.0" layoutY="248.0" text="UserName" />
+            <TextField fx:id="usernameField" layoutX="67.0" layoutY="280.0" prefHeight="27.0" prefWidth="235.0" style="-fx-background-radius: 5px;" />
+            <PasswordField fx:id="passwordField" layoutX="67.0" layoutY="366.0" prefHeight="27.0" prefWidth="235.0" style="-fx-background-radius: 5px;" />
+            <Label layoutX="67.0" layoutY="340.0" text="Password" />
+            <Button layoutX="70.0" layoutY="439.0" mnemonicParsing="false" onAction="#handleLoginButton" prefHeight="27.0" prefWidth="235.0" style="-fx-background-radius: 15px; -fx-background-color: lightblue;" text="Login" />
+            <Button layoutX="71.0" layoutY="489.0" mnemonicParsing="false" onAction="#handleSignUpButton" prefHeight="27.0" prefWidth="235.0" style="-fx-background-radius: 15px; -fx-background-color: lightblue;" text="SignUp" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
